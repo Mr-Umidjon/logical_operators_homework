@@ -1,4 +1,4 @@
-def main(a,b):
+def main(a, b):
     """
     Given two integers a, b,  check the following statement "At least one  of the numbers 'a' and 'b' is negative".
     Args:
@@ -7,4 +7,4 @@ def main(a,b):
     Returns:
         bool: answer
     """
-    return
+    return a < 0 or b < 0
