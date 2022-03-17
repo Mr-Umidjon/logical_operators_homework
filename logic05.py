@@ -1,4 +1,4 @@
-def main(a,b):
+def main(a, b):
     """
     Given two integers a, b,  check the following statement "Each of the numbers 'a' and 'b' is odd".
     Args:
@@ -7,4 +7,4 @@ def main(a,b):
     Returns:
         bool: answer
     """
-    return
+    return a % 2 == 1 and b % 2 == 1
