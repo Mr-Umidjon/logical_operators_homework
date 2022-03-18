@@ -16,4 +16,8 @@ def main(x):
 
     y3 = x % 10
     x //= 10
-    return y1 * 1000 + y2 * 10 + y3 == y3 * 1000 + y2 * 10 + y1
+    return (y1 * 1000 + y2 * 10 + y3 == y3 * 1000 + y2 * 10 + y1) and y1 > 0 or (
+            y1 * 10 + y2 == y2 * 10 + y1) and y1 > 0
+
+
+
