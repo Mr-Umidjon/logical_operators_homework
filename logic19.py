@@ -8,15 +8,8 @@ def main(x):
     Returns:
         bool: answer
     """
-    y1 = x % 10
-    x //= 10
 
-    y2 = x % 10
-    x //= 10
+    return 9 < x < 100 and x == x % 10 * 10 + x // 10 or 99 < x < 1000 and x == x % 10 * 100 + x % 100 // 10 * 10 + x // 100
 
-    y3 = x % 10
-    x //= 10
-    return (y1 * 100 + y2 * 10 + y3 == y3 * 100 + y2 * 10 + y1) or (
-            y2 * 10 + y1 == y1 * 10 + y2)
 
-print(main(11))
+print(main(10))
